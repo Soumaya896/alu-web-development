@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    margin-right: 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+}
+
+/* Fallback responsive behavior for smartphones */
+@media screen and (max-width: 600px) {
+    .works_on_smartphone main {
+        flex-direction: column !important;
+    }
+    .works_on_smartphone article,
+    .works_on_smartphone aside {
+        width: 100%;
+        flex: none !important;
+    }
+}

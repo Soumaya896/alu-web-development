@@ -1,0 +1,41 @@
+/* Task 1: Positioning */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    /* Task 3: Some more styling */
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    /* Task 3: Some more styling */
+    padding: 20px;
+    background-color: #e0e0eb;
+    border-left: 2px solid #ccc;
+}
+
+/* Extra styling for footer */
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
